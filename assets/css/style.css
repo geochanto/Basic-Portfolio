@@ -1,8 +1,9 @@
-* {
+html * {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
     font-size: 16px;
     line-height: 150%;
+    box-sizing: border-box;
 }
 
 header {
@@ -26,7 +27,7 @@ header {
     color: #fff;
     background-color: #4aaaa5;
     padding: 20px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     display: inline-block;
 }
@@ -38,6 +39,7 @@ nav {
 nav ul {
     display: table;
     height: 100%;
+    float: right;
 }
 
 nav li {
@@ -48,19 +50,83 @@ nav li {
 nav a {
     text-decoration: none;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 30px;
+}
+
+nav a:last-child {
+    padding-right: 0;
 }
 
 #main-container {
     width: 960px;
     margin: 0 auto;
+    padding: 30px 0;
+}
+
+#main, #sidebar {
+    padding: 25px;
+    border: 1px solid #ddd;
 }
 
 #main {
     width: 650px;
     float: left;
     background-color: #fff;
-    border: 1px solid #ddd;
 }
+
+/* images set with CSS background image */
+.img {
+    background-size: cover;
+    display: block;
+}
+
+/* Profile picture */
+#profile {
+   background-image: url(../images/profile.png);
+   background-position: center right;
+   float: left;
+   margin: 0 25px 25px 0;
+   width: 200px;
+   height: 180px;
+}
+
+/* Portfolio items */
+
+#portfolio {
+    display: table;
+    width: 100%;
+}
+
+#portfolia li {
+    display: table-cell;
+    width: 50%;
+}
+
+#portfolio .img {
+
+}
+
+#djhub {
+    background-image: url(../images/djhub.jpg);
+}
+
+#ez-digital {
+    background-image: url(../images/ez-digital.jpg);
+}
+
+#innovations {
+    background-image: url(../images/innovations.jpg);
+}
+
+#memefork {
+    background-image: url(../images/memefork.jpg);
+}
+
+#purpleaf {
+    background-image: url(../images/purpleaf.jpg);
+}
+
+/* End portfolio items */
 
 #sidebar {
     width: 270px;
@@ -74,7 +140,10 @@ h1,h2 {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ccc;
 }
 
 h2 {
