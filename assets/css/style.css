@@ -61,6 +61,10 @@ nav a {
     padding: 30px;
 }
 
+nav a:hover {
+    color: #4aaaa5;
+}
+
 nav a:last-child {
     padding-right: 0;
 }
@@ -162,17 +166,57 @@ nav a:last-child {
 }
 
 /* social icons with fontawesome */
+#wrap-icon {
+    display: table;
+    width: 100%;
+}
+
 #wrap-icon li {
-    display: inline-block;
+    display: table-cell;
+    width:33.33%;
 }
 
 .icon { 
     font-family: 'Font Awesome\ 5 Free';
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    background: blue;
-    color: #fff;
+    width: 100%;
+    height: 73px;
+    font-size: 60px;
+
+    position: relative;
+}
+
+.icon:before {
+    position:absolute;
+    transition: .3s;
+}
+
+.icon:hover:before {
+    bottom: 15px;
+}
+
+#github:before {
+    color: #444;
+    background-color: #fff;
+}
+
+#github:hover:before {
+    color: #000;
+}
+
+#linkedin:before {
+    color: #1178b3;
+}
+
+#linkedin:hover:before {
+    color: #023b5c;
+}
+
+#stackoverflow:before {
+    color: #fda429;
+}
+
+#stackoverflow:hover:before {
+    color: #f38e00;
 }
 
 h1,h2 {
