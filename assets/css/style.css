@@ -10,11 +10,9 @@ body {
     background-image: url(../images/hypnotize.jpg);
 }
 
-
 header {
     background-color: #fff;
     border-bottom: 2px solid #ccc;
-
 }
 
 #header-inner {
@@ -261,6 +259,7 @@ h1,h2 {
     color: #4aaaa5;
     font-weight: bold;
     border-bottom: 2px solid #ccc;
+    line-height: 100%;
 }
 
 h1 {
