@@ -10,6 +10,7 @@ body {
     background-image: url(../images/hypnotize.png);
 }
 
+
 header {
     background-color: #fff;
     border-bottom: 2px solid #ccc;
@@ -219,8 +220,6 @@ button {
 
 footer {
     background: #666;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     border-top: 5px solid #4aaaa5;
     height: 50px;
@@ -235,4 +234,19 @@ footer {
     position: relative;
     top: 50%;
     margin-top: -10px;
+}
+
+/* Make footer sticky */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#wrap-page {
+    height: 100%;
+    margin-bottom: -50px;
+}
+
+#push {
+    height: 50px;
 }
