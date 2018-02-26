@@ -7,7 +7,7 @@ html * {
 }
 
 body {
-    background-image: url(../images/hypnotize.png);
+    background-image: url(../images/hypnotize.jpg);
 }
 
 
@@ -130,7 +130,7 @@ nav a:hover {
 
 /* Profile picture */
 #profile {
-   background-image: url(../images/profile.png);
+   background-image: url(../images/profile.jpg);
    background-position: center right;
    float: left;
    margin: 0 25px 25px 0;
